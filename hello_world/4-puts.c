@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  *
- * Description: using puts for display "Programming is like building a multilingual puzzle
+ * Description: using puts for display "Programmin ...
  *
  * Return: Always 0 (Success)
  */
