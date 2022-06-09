@@ -1,1 +1,1 @@
-C - Hello, World 22.06.08
+C - Programming begins  22.06.08
