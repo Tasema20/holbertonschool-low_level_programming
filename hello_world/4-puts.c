@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/**
  * puts funcyion just for display
  */
 int main(void)
