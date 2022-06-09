@@ -1,6 +1,10 @@
 #include <stdio.h>
 /**
- * puts funcyion just for display
+ * main - Entry point
+ *
+ * Description: using puts for display "Programming is like building a multilingual puzzle
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
