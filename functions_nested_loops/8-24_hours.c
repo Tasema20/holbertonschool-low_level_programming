@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print a digital watch
+ * jack_bauer - print a digital watch
  *
  * Return: void
  */
