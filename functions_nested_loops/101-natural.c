@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.c"
+#include "main.h"
 /**
  * main - just prints sum fot multiples of 3 or 5
  * that are lower than 1024
