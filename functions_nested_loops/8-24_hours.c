@@ -2,9 +2,9 @@
 #include "main.h"
 /**
  * print a digital watch
+ *
  * Return: void
  */
-
 void jack_bauer(void)
 {
 	int i;
