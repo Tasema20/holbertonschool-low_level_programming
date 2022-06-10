@@ -6,7 +6,7 @@
  * main - print last digit and compare to 5
  *
  * Description: print last digit in random number
- * and print if is lower o greater than 5 
+ * and print if is lower o greater than 5
  * and show what happen when finish in 0
  *
  * Return: Always 0 (Success)
