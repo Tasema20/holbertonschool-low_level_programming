@@ -15,9 +15,8 @@ char *cap_string(char *s)
 		prev = i - 1;
 		if (s[i] >= 'a' && s[i] <= 'z')
 		{
-			
-			if (i==0)
-				s[i] = s[i] -32;
+			if (i == 0)
+				s[i] = s[i] - 32;
 			else if (s[prev] >= 9 && s[prev] <= 10)
 				s[i] = s[i] - 32;
 			else if (s[prev] >= 32 && s[prev] <= 34)
@@ -27,9 +26,9 @@ char *cap_string(char *s)
 			else if (s[prev] == 46)
 				s[i] = s[i] - 32;
 			else if (s[prev] == 59)
-				s[i] = s[i] -32;
+				s[i] = s[i] - 32;
 			else if (s[prev] == 123 || s[prev] == 125)
-				s[i] = s[i] -32;
+				s[i] = s[i] - 32;
 		}
 	}
 
