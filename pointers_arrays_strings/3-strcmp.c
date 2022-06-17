@@ -9,7 +9,7 @@
  * (in ASCII) in s1 than in s2.
  * A negative number otherwise.
  */
-char _strcmp(char *s1, char *s2)
+int _strcmp(char *s1, char *s2)
 {
 	int i = 0, dif = 0;
 
