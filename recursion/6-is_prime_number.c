@@ -1,60 +1,34 @@
 #include "main.h"
-
 /**
- * length - returns length of string
- * @s: string
- * Return: integer length
+ * is_prime_number - returns 1 if the input integer is a prime number,
+ * otherwise return 0.
+ * @n: input int
+ *
+ * Return: 1 if n is prime, 0 otherwise.
  */
-
-int length(char *s)
+int is_prime_number(int n)
 {
-
-	if (*s != '\0')
-	{
-		return (1 + length(s + 1));
-	}
-	else
-	{
+	if (n == 0 || n == 1 || n == (-1))
 		return (0);
-	}
+	else if (n == 2 || n == (-2))
+		return (1);
+	else
+		return (is_n_prime(n, n / 2));
 }
 
 /**
- * compare - compare characters
- * @s: string
- * @beg: beginning index
- * @end: end index
- * Return: integer indicating non-match 0, match 1
+ * is_n_prime - checks if n is prime, for every divisor i
+ * @n: input number to be analized
+ * @i: input divisor used to check
+ *
+ * Return: 1 if n is prime, 0 otherwise.
  */
-
-int compare(char *s, int beg, int end)
+int is_n_prime(int n, int i)
 {
-	if (s[beg] != s[end])
+	if (i == 1)
+		return (1);
+	else if (n % i == 0)
 		return (0);
-	else if (beg == end && s[beg] == s[end])
-		return (1);
-	else if (beg == end - 1 && s[beg] == s[end])
-		return (1);
 	else
-		return (compare(s, beg + 1, end - 1));
-}
-
-/**
- * is_palindrome - checks is string is a palindrome
- * @s: string
- * Return: integer, 1 if palindrom, 0 if not
- */
-
-int is_palindrome(char *s)
-{
-	int len, beg, end;
-
-	len = length(s);
-	beg = 0;
-	end = len - 1;
-
-	if (len == 0 || len == 1)
-		return (1);
-	else
-		return (compare(s, beg, end));
+		return (is_n_prime(n, i - 1));
 }
